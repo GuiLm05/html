@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box; /* Para garantir que padding e border não afetem a largura total */
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; /* Ajustar a altura */
+    margin: 0; /* Remover margens padrão */
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(82, 82, 82), rgb(41, 40, 40));
+    color: rgb(255, 255, 255); /* Ajustar a cor do texto, se necessário */
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    padding: 20px; /* Adicionar um pouco de espaço ao redor */
+    max-width: 800px; /* Definir uma largura máxima para o conteúdo */
+}
+.a{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+form {
+    background-color: rgb(16, 15, 15); /* Cor de fundo */
+    color: rgb(218, 212, 212); /* Cor do texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+form input, 
+form textarea, 
+form select {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem em cima e embaixo */
+    border: 1px solid rgb(0, 0, 0); /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+form input::placeholder, 
+form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Cor dos placeholders */
+}
+
+form input:focus, 
+form textarea:focus {
+    border-color: rgb(33, 150, 243); /* Cor da borda ao focar */
+    outline: none; /* Remove a borda padrão do foco */
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Sombra ao focar */
+}
+
+form button {
+    background-color: rgb(234, 23, 23); /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+form button:hover {
+    background-color: rgb(181, 24, 24); /* Cor do botão ao passar o mouse */
+}
+
+
+    
+table {
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+    border-collapse: collapse; /* Remove espaços entre células */
+    margin: 20px 0; /* Margem em cima e embaixo da tabela */
+}
+
+.th, .td {
+    padding: 7px; /* Espaçamento interno das células */
+    text-align: center; /* Alinha o texto à esquerda */
+}
+
+th {
+    background-color: #f2f2f2; /* Fundo claro para o cabeçalho */
+    color: #333; /* Cor do texto do cabeçalho */
+}
+
+img {
+    font-size: 2.2em;
+    max-width: 100%; /* Garante que a imagem não exceda a largura da célula */
+    height: 90px; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: large;
+    
+}
+.b:hover{
+    color:#ca2f2f;
+    text-align: center;
+    font-size:large ;
+    color: #ca2f2f;
+    font-size: 1,5em;
+    text-shadow: 2px 2px 8px #ca2f2f;
+    transform: scale(1.05);
+}
+
+
+.c{
+    word-spacing: 100px;
+}
+.menu {
+    color: whitesmoke;
+    font-size: 40px; /* Aumentado para melhor legibilidade */
+    position: relative;
+    top: -30px;
+}
+
+.but {
+    background-color: #ca2f2f;
+    border: none;
+    border-radius: 5px;
+    color: rgb(239, 234, 234);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.but:hover {
+    background-color: #a72a2a; /* Efeito de hover */
+    transform: scale(1.05);
+}
+
+.c {
+    word-spacing: 50px; /* Ajustado para um valor mais razoável */
+}
+
+td {
+    transition: color 0.3s, font-size 0.3s, transform 0.3s;
+}
+
+td:hover {
+    color: black;
+    font-size: 1,5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+footer{
+    text-align: center;
+}
+.copi {
+    content: "\00A9";
+    text-align: center;
+    background-color: #a72a2a;
+  }
+  .relo{
+    text-align: right;
+  }

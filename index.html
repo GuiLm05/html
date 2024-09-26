@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascaria</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        // adicione um zero na frente de números<10
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        t=setTimeout('startTime()',500);
+        }
+        function checkTime(i)
+        {
+        if (i<10)
+        {
+        i="0" + i;
+        }
+        return i;
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <body onload="startTime()">
+            <div id="txt"></div>
+        <nav>
+            <strong class="c">
+                    <u><a class ="b">Home</a></u>
+                    <u><a class="b">Menu</a></u>
+                    <u><a class="b">Reservas</a></u>
+                    <u><a class="b">Contato</a></u>
+            </strong>
+            <hr class="divider">
+            <section class="a">
+            <h1>Bem-vindo à Churrascaria do Brasil!</h1>
+            <p>Desfrute do melhor churrasco da cidade</p>
+            <button class="but">Ver menu</button>
+            </section>
+        </nav>
+    </header>
+   
+    <main>
+        <strong>
+            <h1 class="menu">Menu</h1>
+        </strong>
+        <table>
+            <tbody>
+                <tr>
+                    <td><img src="download.jfif" alt="Picanha" width="100"></td>
+                    <td><img src="download (1).jfif" alt="Cordeiro" width="100"></td>
+                    <td><img src="images.jfif" alt="Fraldinha" width="100"></td>
+                </tr>
+                <tr>
+                    <td>Picanha</td>
+                    <td>Cordeiro</td>
+                    <td>Fraldinha</td>
+                </tr>
+                <tr>
+                    <td>R$ 55,90</td>
+                    <td>R$ 40,00</td>
+                    <td>R$ 32,90</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <hr class="divider">
+        <section>
+            <strong>
+                <p>Reservas</p>
+            </strong>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div>
+                        <label for="email"><strong>E-mail:</strong></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="telefone"><strong>Telefone:</strong></label>
+                        <input type="number" name="telefone" id="telefone" required>
+                    </div>
+                    <div>
+                        <label for="data"><strong>Data:</strong></label>
+                        <input type="date" name="data" id="data" required>
+                    </div>
+                    <div>
+                        <label for="hora"><strong>Hora:</strong></label>
+                        <input type="time" name="hora" id="hora" required>
+                    </div>
+                    <button class="button" type="submit"><strong>Enviar</strong></button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <hr class="divider">
+    <footer>
+        <h3>Contato</h3>
+        <p>Endereço: Rua dos Churrasqueiros, 123 - São Paulo, SP</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>E-mail: contato@Churrascariadobrasil.com.br(mailto:contato@Churrascariadobrasil.com.br)</p>
+    </footer>
+    <p class = "copi">&#169; 2023 Churrascaria do brasil</p>
+</body>
+</html>
